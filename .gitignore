@@ -177,6 +177,7 @@ pyrightconfig.json
 
 # Generated using ignr.py - github.com/Antrikshy/ignr.py
 
+__pycache__
 **/__pycache__/
 .pytest_cache/
 *.py[cod]
