@@ -177,17 +177,44 @@ coverage html
 
 O projeto utiliza `taskipy` para gerenciar comandos. Aqui estão os comandos disponíveis:
 
-- `poetry run task lint` - Executa o linter (Ruff)
-- `poetry run task pre_format` - Corrige problemas de linting automaticamente
-- `poetry run task format` - Formata o código
-- `poetry run task run` - Executa o servidor de desenvolvimento
-- `poetry run task pre_test` - Executa o linter antes dos testes
-- `poetry run task test` - Executa os testes com cobertura
-- `poetry run task post_test` - Gera relatório HTML de cobertura
+### Opção 1: Com poetry run (padrão)
+
+```bash
+poetry run task lint
+poetry run task pre_format
+poetry run task format
+poetry run task run
+poetry run task pre_test
+poetry run task test
+poetry run task post_test
+```
+
+### Opção 2: Com poetry shell (recomendado)
+
+```bash
+poetry shell  # Ativa o ambiente virtual
+task lint
+task pre_format
+task format
+task run
+task pre_test
+task test
+task post_test
+```
+
+### Comandos disponíveis
+
+- `task lint` - Executa o linter (Ruff)
+- `task pre_format` - Corrige problemas de linting automaticamente
+- `task format` - Formata o código
+- `task run` - Executa o servidor de desenvolvimento
+- `task pre_test` - Executa o linter antes dos testes
+- `task test` - Executa os testes com cobertura
+- `task post_test` - Gera relatório HTML de cobertura
 
 ## 📁 Estrutura do projeto
 
-```
+```bash
 fastapi_zero/
 ├── fastapi_zero/
 │   ├── __init__.py
